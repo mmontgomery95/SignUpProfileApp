@@ -6,6 +6,10 @@
              NavigationPage.HasNavigationBar="False"
              NavigationPage.HasBackButton="False">
     <VerticalStackLayout>
+        <Label Text="Profile creation successful!"
+               FontSize="Medium"
+               TextColor="Green"
+               HorizontalOptions="Center"/>
         <Label Text=""
                x:Name="LblUsername"
                VerticalOptions="Center"
@@ -14,13 +18,11 @@
                x:Name="LblEmail"
                VerticalOptions="Center"
                HorizontalOptions="Center" />
-        <Label Text=""
-               x:Name="LblPassword"
-               VerticalOptions="Center"
-               HorizontalOptions="Center"/>
+  
 
         <Button Text="Sign Out"
                 Clicked="Button_Clicked"
-                Margin="20"/>
+                Margin="20"
+                FontSize="Medium"/>
     </VerticalStackLayout>
 </ContentPage>
