@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SignUpProfileApp.MainPage"
+             Title="Sign Up">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30,0"
+                             Spacing="0">
+            
+            <!--Username, Email, Password, Confirm Password-->
+            
+            <Label Text="Username:"
+                   FontSize="Caption"/>
+            <Entry x:Name="UsernameEntry"
+                    HorizontalOptions="Fill"/>
+
+            <Label Text="Email:"
+                   FontSize="Caption"/>
+            <Entry x:Name="EmailEntry"/>
+
+            <Label Text="Password:"
+                   FontSize="Caption"/>
+            <Entry x:Name="PasswordEntry" IsPassword="True"/>
+
+            <Label Text="Confirm Password:"
+                   FontSize="Caption"/>
+            <Entry x:Name="ConfirmPasswordEntry" IsPassword="True"/>
+
+            <Button x:Name="SignupBtn"
+                    Text="Sign Up"
+                    FontSize="Medium"
+                    Clicked="SignupBtn_Clicked"
+                    Margin="0,45"/>
+
+        </VerticalStackLayout>
+
+        <!--<Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto"
+              ColumnDefinitions="Auto, *"
+              Margin="15">
+            
+            <Label Text="Username"
+                   VerticalOptions="Start"
+                   HorizontalTextAlignment="Center"
+                   Grid.Row="0" Grid.Column="0"/>
+            <Entry x:Name="UsernameEntry"
+                   Grid.Row="0" Grid.Column="1"
+                   />
+
+            <Label Text="Email"
+                   VerticalOptions="Start" 
+                   Grid.Row="1" Grid.Column="0"/>
+            <Entry x:Name="EmailEntry"
+                   Grid.Row="1" Grid.Column="1"/>
+
+            <Label Text="Password"
+                   VerticalOptions="Start"
+                   Grid.Row="2" Grid.Column="0"/>
+            <Entry x:Name="PasswordEntry" 
+                   IsPassword="True"
+                   Grid.Row="2" Grid.Column="1"/>
+
+            <Label Text="Confirm Password"
+                   VerticalOptions="Start"
+                   Grid.Row="3" Grid.Column="0"/>
+            <Entry x:Name="ConfirmPasswordEntry"
+                   IsPassword="True"
+                   Grid.Row="3" Grid.Column="1"/>
+
+            <Button x:Name="SignupBtn"
+                    Text="Sign Up"
+                    Clicked="SignupBtn_Clicked"
+                    Grid.Row="4" Grid.ColumnSpan="2"
+                    Margin="15"
+                    HorizontalOptions="Center"/>
+
+        </Grid>-->
+    </ScrollView>
+
+</ContentPage>
