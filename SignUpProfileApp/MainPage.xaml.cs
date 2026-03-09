@@ -50,7 +50,6 @@ namespace SignUpProfileApp
             if (string.IsNullOrWhiteSpace(email))
                 return false;
 
-            // Simple RFC-like email validation
             return Regex.IsMatch(email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$");
         }
     }

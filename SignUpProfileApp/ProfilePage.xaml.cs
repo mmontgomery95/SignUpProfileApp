@@ -10,6 +10,14 @@ public partial class ProfilePage : ContentPage
     public ProfilePage()
 	{
 		InitializeComponent();
+            // When using Shell navigation, NavigationPage attached properties
+            // may not hide the Shell back button. Set a BackButtonBehavior
+            // to explicitly hide and disable the back button for this page.
+            Shell.SetBackButtonBehavior(this, new BackButtonBehavior
+            {
+                IsEnabled = false,
+                IsVisible = false
+            });
 	}
 
     protected override void OnAppearing()
@@ -17,7 +25,6 @@ public partial class ProfilePage : ContentPage
         base.OnAppearing();
         LblUsername.Text = $"Username: {Username}";
         LblEmail.Text = $"Email: {Email}";
-        LblPassword.Text = $"Password: {Password}";
     }
 
     private void Button_Clicked(object sender, EventArgs e)
